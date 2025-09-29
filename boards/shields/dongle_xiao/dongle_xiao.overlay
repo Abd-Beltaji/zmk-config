@@ -1,4 +1,1 @@
-/ {
-};
-
-// BLE is enabled by board; no need to reference a label here
+#include <dt-bindings/zmk/matrix_transform.h>
