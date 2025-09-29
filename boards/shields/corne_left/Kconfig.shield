@@ -1,0 +1,7 @@
+menu "Corne Left Shield"
+
+config SHIELD_CORNE_LEFT
+    bool "Corne Left Shield"
+    default y
+
+endmenu
