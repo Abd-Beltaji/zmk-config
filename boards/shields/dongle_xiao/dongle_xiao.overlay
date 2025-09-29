@@ -1,1 +1,9 @@
-#include <dt-bindings/zmk/matrix_transform.h>
+/ {
+    chosen {
+        zmk,split-central = &split_central;
+    };
+
+    split_central: split_central {
+        compatible = "zmk,split-central";
+    };
+};
