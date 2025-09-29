@@ -1,18 +1,6 @@
-# name: Build ZMK firmware
-# on: [push, pull_request, workflow_dispatch]
-#
-# jobs:
-#   build:
-#     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
 name: Build Corne Xiao Firmware
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-  workflow_dispatch:
-
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
