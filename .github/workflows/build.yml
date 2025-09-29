@@ -41,8 +41,9 @@ jobs:
           cd zmk
           west init -l app
           west update
-
-      - name: Build Corne Xiao Left
+      - name: Remove default corne shield
+        run: rm -rf zmk/app/boards/shields/corne
+        - name: Build Corne Xiao Left
         run: |
           cd zmk
           west build -s app -d build/left -b seeeduino_xiao_ble \
