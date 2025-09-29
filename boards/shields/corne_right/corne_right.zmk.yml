@@ -3,8 +3,7 @@ id: corne_right
 name: Corne Right
 type: shield
 url: https://github.com/foostan/crkbd/
-requires:
-  - seeeduino_xiao_ble
+requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
