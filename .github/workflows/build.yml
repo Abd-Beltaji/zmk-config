@@ -46,19 +46,19 @@ jobs:
         run: |
           cd zmk
           west build -s app -d build/left -b seeeduino_xiao_ble \
-            -- -DSHIELD=corne_xiao/corne_left -DZMK_CONFIG=../../zmk-config/config
+            -- -DSHIELD=corne_left -DZMK_CONFIG=../../zmk-config/config
 
       - name: Build Corne Xiao Right
         run: |
           cd zmk
           west build -s app -d build/right -b seeeduino_xiao_ble \
-            -- -DSHIELD=corne_xiao/corne_right -DZMK_CONFIG=../../zmk-config/config
+            -- -DSHIELD=corne_right -DZMK_CONFIG=../../zmk-config/config
 
       - name: Build Corne Xiao Dongle
         run: |
           cd zmk
           west build -s app -d build/dongle -b seeeduino_xiao_ble \
-            -- -DSHIELD=corne_xiao/corne_dongle -DZMK_CONFIG=../../zmk-config/config
+            -- -DSHIELD=corne_dongle -DZMK_CONFIG=../../zmk-config/config
 
       - name: Upload Firmware Artifacts
         uses: actions/upload-artifact@v4
