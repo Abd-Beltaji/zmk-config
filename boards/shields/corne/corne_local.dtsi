@@ -10,4 +10,7 @@
 
 };
 
+// Provide the label expected by upstream Corne definitions
+pro_micro_i2c: &i2c0 {};
+
 

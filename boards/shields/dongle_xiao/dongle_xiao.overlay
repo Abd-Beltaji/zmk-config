@@ -1,7 +1,4 @@
 / {
-    chosen {
-        zmk,bt-stack = &zephyr;
-    };
 };
 
 // BLE is enabled by board; no need to reference a label here
