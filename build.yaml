@@ -28,14 +28,24 @@
 
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - name: dongle
+    board: seeeduino_xiao_ble
     shield: dongle_xiao
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args:
+      - "-DCONFIG_ZMK_SPLIT=y"
+      - "-DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y"
 
-  - board: seeeduino_xiao_ble
-    shield: corne_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: seeeduino_xiao_ble
+  - name: left
+      board: seeeduino_xiao_ble
+      shield: corne_left
+      cmake-args:
+        - "-DCONFIG_ZMK_SPLIT=y"
+        - "-DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n"
+
+  - name: right
+    board: seeeduino_xiao_ble
     shield: corne_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args:
+      - "-DCONFIG_ZMK_SPLIT=y"
+      - "-DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n"

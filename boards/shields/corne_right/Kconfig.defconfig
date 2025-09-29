@@ -1,4 +1,5 @@
-if SHIELD_CORNE_XIAO
+if SHIELD_CORNE_RIGHT
     config ZMK_KEYBOARD_NAME
-        default "Corne Xiao"
+        default "Corne Right"
 endif
+

@@ -1,0 +1,13 @@
+/ {
+    chosen {
+        zmk,bt-stack = &zephyr;
+    };
+};
+
+&usb_cdc_acm {
+    status = "okay";
+};
+
+&bt {
+    status = "okay";
+};
