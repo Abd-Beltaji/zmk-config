@@ -1,0 +1,2 @@
+CONFIG_ZMK_KEYBOARD_NAME="Corne Left"
+CONFIG_ZMK_KEYMAP="corne_left.keymap"

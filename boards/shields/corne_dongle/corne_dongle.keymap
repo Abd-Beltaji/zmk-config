@@ -1,0 +1,13 @@
+#include <dt-bindings/zmk/keys.h>
+
+&keymap {
+    compatible = "zmk,keymap";
+
+    layers {
+        default_layer {
+            bindings = <
+                &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+            >;
+        };
+    };
+};

@@ -1,0 +1,30 @@
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,keymap = "corne_right.keymap";
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        rows = <&row0 &row1 &row2 &row3 &row4>;
+        cols = <&col0 &col1 &col2 &col3 &col4 &col5>;
+    };
+};
+
+&gpio0 {
+    row0: row_0 { gpios = <0 2 GPIO_ACTIVE_LOW>; };
+    row1: row_1 { gpios = <0 3 GPIO_ACTIVE_LOW>; };
+    row2: row_2 { gpios = <0 4 GPIO_ACTIVE_LOW>; };
+    row3: row_3 { gpios = <0 5 GPIO_ACTIVE_LOW>; };
+    row4: row_4 { gpios = <0 6 GPIO_ACTIVE_LOW>; };
+
+    col0: col_0 { gpios = <0 7 GPIO_ACTIVE_LOW>; };
+    col1: col_1 { gpios = <0 8 GPIO_ACTIVE_LOW>; };
+    col2: col_2 { gpios = <0 9 GPIO_ACTIVE_LOW>; };
+    col3: col_3 { gpios = <0 10 GPIO_ACTIVE_LOW>; };
+    col4: col_4 { gpios = <0 28 GPIO_ACTIVE_LOW>; };
+    col5: col_5 { gpios = <0 29 GPIO_ACTIVE_LOW>; };
+};
+

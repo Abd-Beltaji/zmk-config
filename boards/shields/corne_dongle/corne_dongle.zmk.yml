@@ -1,0 +1,10 @@
+file_format: "1"
+id: dongle_xiao
+name: Dongle Xiao
+type: shield
+url: https://github.com/foostan/crkbd/
+requires:
+  - seeeduino_xiao_ble
+features:
+  - bluetooth
+  - usb
