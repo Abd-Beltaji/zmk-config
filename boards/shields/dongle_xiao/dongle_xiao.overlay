@@ -4,6 +4,4 @@
     };
 };
 
-&bt {
-    status = "okay";
-};
+// BLE is enabled by board; no need to reference a label here
