@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "corne.dtsi"
+#include "../corne/corne.dtsi"
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
