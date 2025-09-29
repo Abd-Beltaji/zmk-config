@@ -1,10 +1,10 @@
 file_format: "1"
-id: corne_xiao
-name: Corne Xiao
+id: corne_left
+name: Corne Left 
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
-  - corne_xiao
+  - corne_left
