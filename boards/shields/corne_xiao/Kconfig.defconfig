@@ -1,0 +1,16 @@
+if SHIELD_CORNE_XIAO_LEFT
+config ZMK_KEYBOARD_NAME
+    default "Corne Xiao Left"
+endif
+
+if SHIELD_CORNE_XIAO_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "Corne Xiao Right"
+endif
+
+if SHIELD_CORNE_XIAO_DONGLE
+config ZMK_KEYBOARD_NAME
+    default "Corne Xiao Dongle"
+endif
+
+

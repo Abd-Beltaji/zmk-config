@@ -1,0 +1,11 @@
+config SHIELD_CORNE_XIAO_LEFT
+    bool "Corne Xiao Left"
+    select ZMK_KEYMAP
+
+config SHIELD_CORNE_XIAO_RIGHT
+    bool "Corne Xiao Right"
+    select ZMK_KEYMAP
+
+config SHIELD_CORNE_XIAO_DONGLE
+    bool "Corne Xiao Dongle"
+    select ZMK_KEYMAP
