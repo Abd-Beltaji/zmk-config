@@ -1,6 +1,7 @@
 / {
     chosen {
         zmk,split-central = &split_central;
+        zmk,keymap = "dongle_xiao.keymap";
     };
 
     split_central: split_central {

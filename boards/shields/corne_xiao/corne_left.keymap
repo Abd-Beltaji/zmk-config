@@ -1,0 +1,25 @@
+#include <dt-bindings/zmk/keys.h>
+
+&keymap {
+    compatible = "zmk,keymap";
+
+    layers {
+        default_layer {
+            bindings = <
+                &kp Q   &kp W   &kp E   &kp R   &kp T   &kp NO
+                &kp A   &kp S   &kp D   &kp F   &kp G   &kp NO
+                &kp Z   &kp X   &kp C   &kp V   &kp B   &kp NO
+                &kp ESC &kp TAB &kp LCTRL &kp LSHIFT &kp SPACE &kp NO
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp NO
+                &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp NO
+                &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+                &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+            >;
+        };
+    };
+};

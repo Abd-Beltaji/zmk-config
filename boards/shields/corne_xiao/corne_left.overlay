@@ -1,6 +1,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
+        zmk,keymap = "corne_left.keymap";
     };
 
     kscan0: kscan {
