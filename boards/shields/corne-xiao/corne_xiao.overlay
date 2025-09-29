@@ -1,8 +1,5 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
-
-&sensor0 { status = "disabled"; };  // Only if needed to disable built-in sensors
-
 / {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
