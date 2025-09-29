@@ -4,10 +4,6 @@
     };
 };
 
-&usb_cdc_acm {
-    status = "okay";
-};
-
 &bt {
     status = "okay";
 };

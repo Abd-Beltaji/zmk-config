@@ -1,0 +1,11 @@
+/dts-v1/;
+/ {
+    fragment@0 {
+        target = <&i2c0>;
+        __overlay__ {
+            status = "okay";
+            clock-frequency = <I2C_SPEED_FAST>;
+        };
+    };
+
+};
